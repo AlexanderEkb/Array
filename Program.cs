@@ -58,7 +58,6 @@ namespace DataStructures
 {
   class Program
     {
-      static IArray arr = new SingleArray();
       static void Main(string[] args)
       {
         int Count = 1;
@@ -71,6 +70,7 @@ namespace DataStructures
 
       static void Test(int Count)
       {
+        IArray arr = new VectorArray();
         Stopwatch watch = new Stopwatch();
         watch.Start();
         for(int i=0; i<Count; i++)
