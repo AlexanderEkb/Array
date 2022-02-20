@@ -70,7 +70,9 @@ namespace DataStructures
 
       static void Test(int Count)
       {
-        IArray arr = new VectorArray();
+        // IArray arr = new SingleArray();
+        // IArray arr = new VectorArray();
+        IArray arr = new FactorArray();
         Stopwatch watch = new Stopwatch();
         watch.Start();
         for(int i=0; i<Count; i++)
